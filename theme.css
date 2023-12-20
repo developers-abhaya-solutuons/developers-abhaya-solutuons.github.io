@@ -1,40 +1,131 @@
+/* Global CSS */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Lato', sans-serif;
+}
+.avatar img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+.member_abhaya,
+.member_miracle,
+.member_Wisdom_Obioha,
+.member_bikash_sh {
+    border: 1px solid #dadadada;
+    padding: 31px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1320px;
+    padding: 30px;
+    margin: 0 auto;
+    gap: 20px;
+}
+.details h1 {
+    font-size: 23px;
+    margin-top: 7px;
+    font-weight: 400;
+}
+.details h2 {
+    margin-top: 7px;
+    font-weight: 600;
+}
+.details p {
+    margin-top: 12px;
+    font-size: 18px;
+}
+.social-media-icons {
     display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-    text-align: center;
+    gap: 8px;
+    font-size: 21px;
+    margin-top: 13px;
 }
-.wrap .title h1 {
-    font-size: 29px;
-    color: blue;
-}
-.wrap .title h2 {
-    padding-top: 8px;
-    font-family: cursive;
-    font-size: 26px;
-}
-/* button {
+button {
     width: 143px;
     height: 36px;
-    cursor: pointer;
-    font-size: 18px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(218, 218, 218);
-    border-image: initial;
+    border: 1px solid #dadada;
     border-radius: 5px;
     background: transparent;
-    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.5s;
 }
 button:hover{
     background-color: #3498db;
-    color: white; */
+    color: white;
+}
+.touch {
+    margin-top: 13px;
+}
+.copyright {
+    height: 17vh;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.copyright p {
+    font-size: 19px;
+    color: black;
+    font-weight: 400;
+}
+.nav .emailadress {
+    background: yellowgreen;
+    width: 100%;
+    height: 43px;
+    max-height: 43px;
+    padding: 12px;
+}
+.nav .emailadress a {
+    color: darkblue;
+    font-size: 17px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.nav .emailadress a:hover{
+    color: rgb(79, 0, 169);
+}
+@media screen and (max-width: 768px) {
+    .avatar img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .member_abhaya,
+    .member_miracle,
+    .member_Wisdom_Obioha {
+        padding: 20px;
+        width: calc(100% - 3rem);
+        max-width: 100%;
+        margin-left: 20px;
+        margin-bottom: 20px; 
+    }
+
+    .member_Wisdom_Obioha {
+        /* Fix typo: change 'display: grid(te);' to 'display: grid;' */
+        display: grid;
+    }
+
+    .container {
+        /* Change 'flex-direction' to 'grid-template-columns' for the container */
+        grid-template-columns: 1fr; /* Change to one column for responsiveness */
+        align-items: center;
+        margin-top: 20px;
+    }
 }
