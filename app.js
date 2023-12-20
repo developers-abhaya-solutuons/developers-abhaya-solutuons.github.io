@@ -1,30 +1,31 @@
-const getInTouchBtn = document.getElementById('getInTouchBtn')
+const newButton1 = document.getElementById('newButton1');
 
-function handleClick (){
-    window.location.href = 'https://www.facebook.com/dev.code.smith.12'
-}
-
-getInTouchBtn.addEventListener ('click',  handleClick);
-const emailLink = document.getElementById('emailLink');
-function sendEmail() {
-  const subject = encodeURIComponent('Subject of the email');
-  const body = encodeURIComponent('Content of the email.');
-  const mailtoLink = `mailto:abhayasolutions52@gmail.com?subject=${subject}&body=${body}`;
-
-  window.location.href = mailtoLink;
-}
-emailLink.addEventListener('click', function(event) {
-  event.preventDefault(); // Prevent default behavior of the link
-  sendEmail(); // Call the function to open the email client
-});
-// Function to handle the click event
-function handleClick() {
+function handleNewButton1Click() {
     window.location.href = 'https://www.facebook.com/dev.code.smith.12';
-  }
-  
-  // Get the button element
-  const DuniyaChina = document.getElementById('DuniyaChina');
-  
-  // Attach click event listener to the button
-  getInTouchBtn.addEventListener('click', handleClick);
-  
+}
+
+newButton1.addEventListener('click', handleNewButton1Click);
+
+const newButton2 = document.getElementById('newButton2');
+
+function handleNewButton2Click() {
+    window.location.href = 'https://www.facebook.com/profile.php?id=100082403262943';
+}
+
+newButton2.addEventListener('click', handleNewButton2Click);
+
+const newButton3 = document.getElementById('newButton3');
+
+function handleNewButton3Click() {
+    window.location.href = 'https://www.facebook.com/profile.php?id=100094047817709';
+}
+
+newButton3.addEventListener('click', handleNewButton3Click);
+
+const newButton4 = document.getElementById('newButton4');
+
+function handleNewButton4Click() {
+    window.location.href = 'https://www.facebook.com/artistTCP';
+}
+
+newButton4.addEventListener('click', handleNewButton4Click);
